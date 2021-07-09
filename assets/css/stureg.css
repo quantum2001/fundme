@@ -90,6 +90,18 @@ a {
     align-items: center;
     justify-content: center;
  }
+ .progress-wrapper-top .done{
+    width: 40px;
+    height: 40px;
+    background: green;
+    border-radius: 50%;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
 .progress-line {
     height: 3px;
     width: calc((100% - 120px) / 2);
@@ -98,6 +110,19 @@ a {
 .reg-container {
     background: url('../images/world.png');
     background-size: cover;
+    text-align: center;
+    margin-top: 50px;
+}
+.reg-container-1 {
+    background: url('../images/world.png');
+    background-size: cover;
+    margin-top: 50px;
+}
+.inner-section {
+    margin-top: 40px;
+}
+.inner-section h1{
+    text-transform: uppercase;
 }
 form {
     margin: 30px auto;
@@ -128,11 +153,20 @@ form p {
 }
 .input-container-double {
     display: flex;
+    justify-content: space-between;
     width: 100%;
 }
-.input-section {
-    width: 48%;
-    margin: 0 1%;
+.input-section-right{
+    width: 49%;
+    margin-left: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.input-section-left{
+    width: 49%;
+    margin-right: 1%;
+    display: flex;
+    flex-direction: column;
 }
 .input-icon {
     position: absolute;
@@ -146,7 +180,7 @@ form p {
 .input-icon img {
     height: 20px;
 }
-.input-container label, .input-section label {
+.input-container label, .input-section-left label, .input-section-right label{
     display: inline-block;
     margin: 5px 0;
     font-size: 14px;
@@ -175,14 +209,63 @@ form p {
     font-size: 16px;
     color: #0077EE  ;
 }
-.submit-container button {
+
+button[type='submit'] {
     border: none;
     background-color: var(--brown);
-    padding: 10px 30px;
+    padding: 10px 50px;
     border-radius: 8px;
     color: #FFF;
     font-size: 16px;
     cursor: pointer;
+}
+button[type='submit']:hover {
+ opacity: 0.9;
+} 
+.notice{
+    font-size: 13px;
+    color: #555;
+    padding: 12px 0;
+}
+.input-section {
+    width: 90%;
+    max-width: 370px;
+    display: flex;
+    margin: 25px auto;
+    justify-content: space-between;
+}
+.otp-left, .otp-right {
+    display: flex;
+
+}
+.input-border {
+    width: 45px;
+    height: 60px;
+    border-radius: 8px;
+    background: white;
+    border: 1px #CACACA solid;
+    margin: 0 5px;
+}
+.input-border input {
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    text-align: center;
+    background: transparent;
+    border: none;
+   
+}
+.cancel {
+    display: block;
+    padding: 12px 0;
+    color: #0077EE  ;
+
+}
+.gray {
+    color: #555;
+}
+.green {
+    color: green;
 }
 @media screen and (max-width: 500px){
     .reg-progress{

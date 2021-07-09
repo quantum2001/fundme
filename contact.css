@@ -5,6 +5,8 @@
 }
 body {
   font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: normal;
 }
 .logo {
     padding: 20px 10px 0;
@@ -259,12 +261,13 @@ label {
 }
 .para {
   padding-top: 30px;
+  line-height: 1.7;
 }
 .mission {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 80px 30px;
+  padding: 60px 60px 30px;
   background: rgba(0, 119, 238, 0.08);
 }
 .mission-right {
@@ -273,11 +276,11 @@ label {
   position: relative;
 }
 .mission h1 {
-  font-size: 30px;
+  font-size: 35px;
 }
 .mission h1:after {
   content: '';
-  width: 165px;
+  width: 195px;
   height: 5px;
   background-color: #EE7700;;
   position: absolute;
@@ -291,7 +294,202 @@ label {
   font-weight: normal;
   line-height: 2.0;
 }
-
+.content {
+  background-color: #F7F7F7;
+  padding:60px 50px 90px;
+}
+.content h2 {
+  font-size: 2.8em;
+}
+.content-para {
+  margin: 10px 0 30px;
+  color:rgba(154, 154, 154, 1); ;
+}
+.drop-down-btn {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdowncontent {
+  display: none;
+  position: absolute;
+  width: 200px;
+  height: 150px;
+  overflow: auto;
+  background-color: white;
+  box-shadow: 2px 1px white;
+  color:  #EE7700;;
+  z-index: 1;
+  font-size: 10px;
+}
+.dropdowncontent div p {
+  margin: 10px;
+}
+.dropdown:hover .dropdowncontent {
+  display: block;
+}
+.dropdown button {
+  padding: 10px 13px ;
+  background: #E2ECF5;
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.dropdown button img {
+  margin-left: 5px;
+}
+.btn-search {
+  background: #0077EE;
+  color: white;
+  padding: 10px;
+  border: none;
+}
+.check {
+  display: flex;
+  color: rgba(154, 154, 154, 1);
+  margin: 15px 0 20px;
+}
+.check p {
+  font-size: 15px;
+}
+.checkbox {
+  margin-right: 10px;
+  border: 1px solid rgba(154, 154, 154, 1);
+}
+.card-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card {
+  width: 300px;
+  height: 250px;
+  background-color: white;
+  padding: 50px 30px;
+  position: relative;
+  color:  rgba(238, 119, 0, 1);
+  box-shadow: 1px 2px 2px 2px lightgrey;
+}
+.card:hover {
+  transform: translate(0px, 15px);
+}
+.card-container-para {
+  color:  #5F5E5D;
+  margin-top: 65px;
+}
+.card p {
+  margin-top: 20px;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.card h5::after {
+  content: '';
+  width: 100px;
+  height: 5px;
+  position: absolute;
+  background: #EE7700;
+  top: 75px;
+  left: 30px;
+}
+.card h5 {
+  font-size: 21px;
+}
+.img {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 30px 40px;
+  width:1300px;
+}
+ .image, .image-visible {
+  display: none;
+} 
+.image-visible {
+  display: block;
+}
+.img p {
+  width: 30%;
+  margin: 0 100px;
+  font-size: 20px;
+  line-height: 1.7;
+}
+.beneficiaries {
+  background-color: white;
+  margin: 100px 0 40px;
+  padding-top: 20px;
+  border-radius: 5px;
+}
+.beneficiaries h1 {
+  text-align: center;
+  font-size: 32px;
+}
+.carousel {
+  display: flex;
+  position: relative;
+  width: 1300px;
+  margin:  auto;
+  overflow: hidden;
+}
+.carousel-images {
+  display: flex;
+  transform: translateX(0);
+  transition: transform 0.25s;
+}
+.btn-right {
+  position: absolute;
+  right: 30px;
+  top: 185px;
+  z-index: 1;
+}
+.btn-left {
+  position: absolute;
+  left: 5px;
+  top: 185px;
+  z-index: 1;
+}
+.btn-right:hover {
+  cursor: pointer;
+}
+.btn-left:hover {
+  cursor: pointer;
+}
+.btn-invite {
+  padding: 10px 70px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  margin-left: 600px;
+  background-color: rgba(238, 119, 0, 1);
+  color: rgba(255, 255, 255, 1); 
+}
+.partner {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 60px;
+  padding: 10px;
+  background-color: white;
+  border-radius: 5px;
+}
+.partner h1 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+.partner-flex-container {
+  display: flex;
+  justify-content: space-around;
+}
+.partner-item img {
+  width: 200px;
+}
+.welcome-img-text div h1 {
+  font-size: 40px;
+}
 /* .row {
   width: 400px;
   margin: auto;

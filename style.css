@@ -246,14 +246,35 @@ section {
 .inputType {
     width: 500px;
     margin: 5px 0 20px;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border: 1px solid #9A9A9A;
+    border-radius: 5px;
+}
+.text-para {
+    margin: 5px 0 30px ;
+}
+.radioInput {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.radioInput label {
+    margin-left: 10px;
 }
 .form {
     margin-left: 30px;
 }
 .input-field label {
     font-size: 15px
+}
+.input-item {
+    width: 220px;
+}
+.input-field-container {
+    display: flex;
+    width: 500px;
+    justify-content: space-between;
 }
 .selectWrapper {
     display: flex;
@@ -271,31 +292,32 @@ select {
     -webkit-appearance: none;
     margin: 5px 0 20px;
  }
-.select-box::after {
+/* .select-box::after {
      content: url('./images/dropdown.png');
      position: absolute;
      left: 180px;
      bottom: 25px;
-     /* border-top: 8px solid rgba(0, 0, 0, 0.6);;
+     border-top: 8px solid rgba(0, 0, 0, 0.6);;
      border-right: 6px solid transparent;
-     border-left: 6px solid transparent; */
-     
+     border-left: 6px solid transparent;
+    
  }
  .select-box2::after {
     content: url('./images/dropdown.png');
     position: absolute;
     left: 480px;
     bottom: 25px;
-    /* border-top: 8px solid rgba(0, 0, 0, 0.6);;
+    border-top: 8px solid rgba(0, 0, 0, 0.6);;
     border-right: 6px solid transparent;
     border-left: 6px solid transparent; 
-     */
-}
+   
+} */
 .inputtype1 {
     margin: 3px 0 20px;
-    padding: 5px 15px;
+    padding: 10px 15px;
     border: 1px solid #9A9A9A;
-    width: 180px;
+    border-radius: 5px;
+    width: 500px;
 }
 .fileContainer {
     display: flex;
@@ -346,23 +368,29 @@ input[type = 'file'] {
 .file-left p:not(.para3), .file-right p:not(.para3) {
     margin: 10px;
     font-size: 0.1em;
-    color: green;
+    color: #525252;;
+}
+.para2 {
+    text-align: center;
+    font-size: 10px;
+    
 }
 .bottom {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 1200px;
+    width: 500px;
     margin: 30px auto; 
 }
 .bottom a, .add {
     text-decoration: none;
     color: #0077EE;
+    margin-left: 15px;
 }
 .nextbtn {
     background: #EE7700;
     border-radius: 5px;
-    padding: 8px 20px;
+    padding: 8px 30px;
     color: #F6F6F6
 }
 
@@ -370,6 +398,10 @@ input[type = 'file'] {
     align-self: center;
     margin-right: 280px;
 } 
+.save {
+    text-decoration: none;
+    margin: 22px 0;
+}
 .inputtype2 {
     width: 500px;
     margin: 3px 0 15px;
@@ -378,6 +410,19 @@ input[type = 'file'] {
 }
 .txt {
     margin: 40px 0 10px;
+}
+table {
+    margin-bottom: 30px;
+}
+table th {
+    background: rgba(0, 119, 238, 0.07);
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th,td {
+    padding: 10px;
 }
 @media only screen and (max-width: 768px) {
     section {
