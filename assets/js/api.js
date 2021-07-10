@@ -1,9 +1,10 @@
 // Student sign up
 
 const submitButton = document.getElementById('submit-student-form')
-let fullname = document.getElementById('fullname').value
-let phoneno = document.getElementById('phoneno').value
-let email = document.getElementById('email').value
+const fullname = document.getElementById('fullname').value
+const phoneno = document.getElementById('phoneno').value
+const email = document.getElementById('email').value
+const password = document.getElementById('password').value
 
 submitButton.addEventListener('click', (e) => {
     e.preventDefault()
@@ -12,8 +13,8 @@ submitButton.addEventListener('click', (e) => {
         fullname: fullname,
         phoneNumber: phoneno,
         email: email,
-        password: "zenith",
-        confirmPassword: "zenith",
+        password: password,
+        confirmPassword: password,
         role: "student"
     }
     fetch('https://fundme-backend.herokuapp.com/auth/signup', {
@@ -28,6 +29,10 @@ submitButton.addEventListener('click', (e) => {
         body: JSON.stringify(studentDetails)
     })
         .then(response => response.json())
-        .then(data => location.assign('login.html'))
+        .then((data) => {
+            if (data['newUser']) {
+                location.assign('studentregistration2.html')
+            }
+        })
         .catch(err => console.log(err))
 })

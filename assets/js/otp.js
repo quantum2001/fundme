@@ -35,3 +35,8 @@ for (let i = 0; i < input.length; i++) {
     })
 
 }
+const otpSubmit = document.getElementById('otpsubmit')
+otpSubmit.addEventListener('click', (e) => {
+    e.preventDefault()
+    location.assign('login.html')
+})

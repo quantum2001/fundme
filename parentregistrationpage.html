@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <script src="https://kit.fontawesome.com/1dec0aadaa.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="logo">
         <img id="logoCircle" src="./images/ellipse.png" alt="logocircle">
@@ -16,7 +18,7 @@
     <div class="container">
         <div id="progressBar">
             <div class="step">
-                <div class="bullet complete completed">  1  </div>
+                <div class="bullet complete completed"> 1 </div>
                 <p class="step-text"> Personal Information </p>
             </div>
             <div class="step">
@@ -25,8 +27,8 @@
             </div>
             <div class="step">
                 <div class="bullet"> 3 </div>
-                <p class="step-text">  Profile Completion </p>
-            </div>    
+                <p class="step-text"> Profile Completion </p>
+            </div>
         </div>
     </div>
     <div class="main">
@@ -43,17 +45,21 @@
             </div>
             <div class="input-field">
                 <label for="phone number"> Phone Number </label>
-                <input type="text" class="inputType"id='phoneNumber'>
+                <input type="text" class="inputType" id='phoneNumber'>
             </div>
             <div class="input-field">
                 <label for="date"> Date Of Birth </label>
                 <input type="date" class="inputType">
             </div>
+            <div class="input-field">
+                <label for="date"> Password </label>
+                <input type="password" class="inputType" id="password">
+            </div>
             <div class="selectWrapper">
                 <div>
                     <label for="origin"> State Of Origin </label>
                     <div class="select-box">
-                       <select name="origin" id="">
+                        <select name="origin" id="">
                             <option value="volvo">Volvo</option>
                             <option value="saab">Saab</option>
                             <option value="fiat">Fiat</option>
@@ -82,10 +88,10 @@
                 <input type="text" class="inputtype2">
             </div>
         </form>
-        <a href="#"  class="add"> 
-           <span>+ </span> &nbsp;
-           Add  home address line 2
-        </a> 
+        <a href="#" class="add">
+            <span>+ </span> &nbsp;
+            Add home address line 2
+        </a>
         <p class="txt"> Upload Identification Documents Below </p>
         <div class="fileContainer">
             <div class="file-left">
@@ -94,19 +100,19 @@
                     <p class="para3"> Passport Photograph</p>
                     <div class="buttons">
                         <div class="pictureBtn">
-                           <input type="file" id="file">
-                           <label for="file"> 
+                            <input type="file" id="file">
+                            <label for="file">
                                 <span>
                                     <i class="fas fa-camera camera"></i>
-                                </span>   
-                                Camera 
+                                </span>
+                                Camera
                             </label>
                         </div>
                         <div class="uploadBtn">
                             <span>
                                 <i class="far fa-file-alt upload"></i>
                             </span> &nbsp;
-                             Upload
+                            Upload
                         </div>
                     </div>
                 </div>
@@ -122,25 +128,27 @@
                             <label for="file">
                                 <span>
                                     <i class="fas fa-camera camera"></i>
-                                </span>   
-                                Camera 
+                                </span>
+                                Camera
                             </label>
                         </div>
                         <div class="uploadBtn">
                             <span> <i class="far fa-file-alt upload"></i> </span> &nbsp;
-                             Upload
+                            Upload
                         </div>
                     </div>
                 </div>
-                <p> Must be either International Passport, NIN or Driver’s Licence  </p>
+                <p> Must be either International Passport, NIN or Driver’s Licence </p>
             </div>
         </div>
     </div>
     <div class="bottom">
         <a href="requestform.html"> Go back </a>
-        <a href="parentregistrationpage2.html" class="nextbtn" id="nextbtn" style="text-decoration: none; color: black">Next </a>
+        <a href="parentregistrationpage2.html" class="nextbtn" id="nextbtn"
+            style="text-decoration: none; color: black">Next </a>
     </div>
 
-    <script src="/parent-registration-api.js"></script>
+    <script src="parent-registration-api.js"></script>
 </body>
+
 </html>
